@@ -66,5 +66,20 @@
           "selectedIconPath": "static/tab_icons/my-active.png"
         }
       ]
-    }
+  },
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        {
+          "path": "goods_detail/goods_detail",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        }
+       ]
+       }
+  ]
+
 }
