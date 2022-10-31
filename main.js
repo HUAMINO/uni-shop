@@ -2,6 +2,9 @@
 // #ifndef VUE3
 import Vue from 'vue'
 import App from './App'
+
+// 导入store包
+import store from './store/store'
 // 导入请求包
 import { $http } from '@escook/request-miniprogram'
 uni.$http = $http
@@ -30,7 +33,8 @@ Vue.config.productionTip = false
 App.mpType = 'app'
 
 const app = new Vue({
-    ...App
+    ...App,
+    store
 })
 app.$mount()
 // #endif
